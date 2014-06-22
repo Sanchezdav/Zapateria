@@ -28,12 +28,12 @@ class Material(models.Model):
 	color = models.ForeignKey(Color)
 
 	def __unicode__(self):
-		return self '%s %s' % (self.material, self.color)
+		return '%s %s' % (self.material, self.color)
 
 class Adorno(models.Model):
 	adorno = models.CharField(max_length=255)
 	color = models.ForeignKey(Color)
 
 	def __unicode__(self):
-		return self '%s %s' % (self.adorno, self.color)
+		return '%s %s' % (self.adorno, self.color)
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}{% endblock title %}</title>
+
+	{% load static from staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class='row'>
+				<div class='col-lg-6'>
+					<a href="#">
+						<img src="{{STATIC_URL}}img/Logobueno.png" alt="Logo" width='200'>
+					</a>
+				</div>
+				<div class='col-lg-6'>
+					<a href="#" class="pull-right">Registrarse</a>
+					
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class='Menu'>
+		<ul>
+			<li>Diseña</li>
+			<li>Inspirate</li>
+			<li>Como se hace</li>
+			<li>Materiales</li>
+		</ul>
+	</nav>
+
+	{% block contenedor %}
+	{% endblock contenedor %}
+
+	<footer>
+		&copy; e-Shoes
+	</footer>
+
+	<script src="{{STATIC_URL}}js/jquery-1.11.1.min.js"></script>
+	<script src="{{STATIC_URL}}js/bootstrap.js"></script>
+	<script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+</body>
+</html>
