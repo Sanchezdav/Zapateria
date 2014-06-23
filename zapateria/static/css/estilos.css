@@ -69,6 +69,26 @@ header
 
 }
 
+footer
+{
+	background: lightgrey;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 2em;
+	padding: 1em;
+	width: 100%
+}
+
+footer span
+{
+	color: black;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
 nav
 {
 	margin-bottom: 0;
@@ -79,26 +99,49 @@ nav
 	padding-top: 1em;
 }
 
+#contacto
+{
+	margin-bottom: 1em;
+}
+
 #contenedor-principal
 {
 	background: #F0F0F0;
 	margin-top: 0;
 }
 
-#registrarse
+#noticias
+{
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 4em;
+	margin-bottom: 1em;
+	padding: 1em;
+	width: 100%
+}
+
+#cont-login
 {
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-#registrarse a
+#cont-login a
 {
 	margin-left: .5em;
 }
 
 #slider
 {
-	margin: 1em auto;
+	margin-top: 0;
+	margin-bottom: 1em;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 2em;
 	text-align: center;
 }
 
@@ -171,3 +214,32 @@ nav
     background-color: white;
 }
 /* menu */
+
+/*--------------------------------Media Queries----------------------------------*/
+@media screen and (max-width : 1000px)
+{
+
+	.navbar-default .navbar-nav > li > a 
+	{
+	    padding: 1.5em 2.5em;
+	    font-size: 1.1em;
+	    font-weight: bold;
+	    border-bottom: 5px solid transparent;
+	}
+
+}
+
+@media screen and (max-width : 850px)
+{
+
+	.navbar-default .navbar-nav > li > a 
+	{
+	    padding: 1.5em 2em;
+	    font-size: 1.1em;
+	    font-weight: bold;
+	    border-bottom: 5px solid transparent;
+	}
+
+}
+
+

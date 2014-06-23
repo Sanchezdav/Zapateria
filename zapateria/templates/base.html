@@ -21,12 +21,12 @@
 					</a>
 				</div>
 				<div class='col-xs-6 col-sm-4 col-md-4 col-lg-4 text-center' id='avatar'>
-						<img src="{{STATIC_URL}}img/yo.jpg" alt="avatar" class="img-circle" width='50'>
+						<a href="#"><img src="{{STATIC_URL}}img/yo.jpg" alt="avatar" class="img-circle" width='50'></a>
 					<span class='pull-center'>Bienvenido <b>David</b></span>
 				</div>
-				<div class='col-xs-6 col-sm-4 col-md-4 col-lg-4' id='registrarse'>
+				<div class='col-xs-6 col-sm-4 col-md-4 col-lg-4' id='cont-login'>
 					<a href="#" class="pull-right btn btn-large boton">Registrarse</a>
-					<a href="#" class="pull-right btn btn-large boton">Login</a>
+					<a href="/ingresar/" class="pull-right btn btn-large boton">Login</a>
 				</div>
 				<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12' id='redes-sociales'>
 					<a href="#" class='pull-right icon-facebook fuentes'></a>
@@ -50,9 +50,9 @@
 	    	</div>
 
     		<!-- Collect the nav links, forms, and other content for toggling -->
-    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 menu">
       			<ul class="nav navbar-nav">
-			        <li class="activo"><a href="#">HOME</a></li>
+			        <li class="activo"><a href="/">HOME</a></li>
 			        <li><a href="#">DISEÑA</a></li>
 			        <li><a href="#">INSPIRA</a></li>
 			        <li><a href="#">COMO SE HACE</a></li>
@@ -63,14 +63,41 @@
 	</nav>
 
 	<section id='contenedor-principal'>
-		<div class="container">
 			{% block contenedor %}
 			{% endblock contenedor %}
-		</div>
 	</section>
 
+	<div class="container">
+		<div id='contacto'>
+			<div class="page-header">
+				<h1>Contacta con e-Shoes</h1>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-sm 6col-md-3 col-lg-3">
+					<h2>Llamanos a:</h2>
+					<h3><span class='label label-default'>7225858727</span></h3>
+				</div>
+				<div class="col-sm-12 col-sm 6col-md-3 col-lg-3">
+					<h2>Por Facebook:</h2>
+					<h3><span class='label label-default'>e-Shoes</span></h3>
+				</div>
+				<div class="col-sm-12 col-sm 6col-md-3 col-lg-3">
+					<h2>Por Twitter:</h2>
+					<h3><span class='label label-default'>@e-Shoes</span></h3>
+				</div>
+				<div class="col-sm-12 col-sm 6col-md-3 col-lg-3">
+					<h2>Por email:</h2>
+					<h3><span class='label label-default'>contacto@eshoes.com</span></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<footer>
-		&copy; e-Shoes
+		<div class='container'>	
+			<span>Creado en Mexico</span>
+			<span>&copy; 2014 e-Shoes</span>
+		</div>
 	</footer>
 
 	<script src="{{STATIC_URL}}js/jquery-1.11.1.min.js"></script>

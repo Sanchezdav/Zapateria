@@ -94,3 +94,9 @@ TEMPLATE_DIRS = (
 STATICFILES_DIRS = (
     join(BASE_DIR, "static"),
 )
+
+from django.core.urlresolvers import reverse_lazy
+
+LOGIN_URL = reverse_lazy('login')
+LOGIN_REDIRECT_URL = reverse_lazy('home')
+LOGOUT_URL = reverse_lazy('logout')
