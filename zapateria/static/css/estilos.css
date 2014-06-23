@@ -1,0 +1,173 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?ayhrmd');
+	src:url('../fonts/icomoon.eot?#iefixayhrmd') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?ayhrmd') format('woff'),
+		url('../fonts/icomoon.ttf?ayhrmd') format('truetype'),
+		url('../fonts/icomoon.svg?ayhrmd#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-googleplus:before {
+	content: "\e600";
+}
+.icon-facebook:before {
+	content: "\e601";
+}
+.icon-twitter:before {
+	content: "\e602";
+}
+
+.fuentes
+{
+	color: black;
+	font-size: 2em;
+	text-decoration: none;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.fuentes:hover
+{
+	color: grey;
+	text-decoration: none;
+}
+
+#redes-sociales a
+{
+	margin-left: .5em;
+}
+
+header
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-bottom: .5em;
+	width: 100%
+
+}
+
+nav
+{
+	margin-bottom: 0;
+}
+
+#avatar
+{
+	padding-top: 1em;
+}
+
+#contenedor-principal
+{
+	background: #F0F0F0;
+	margin-top: 0;
+}
+
+#registrarse
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#registrarse a
+{
+	margin-left: .5em;
+}
+
+#slider
+{
+	margin: 1em auto;
+	text-align: center;
+}
+
+.boton
+{
+	background: rgb(28,173,228);
+	border-bottom: 3px solid midnightblue;
+	color: white;
+	font-weight: bold;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.boton:hover
+{
+	background: dodgerblue;
+	color: white;
+}
+
+
+/* Menu */
+.navbar-default {
+    background: lightgrey;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: black;
+    padding: 1.5em 3em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 5px solid transparent;
+
+    -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    border-bottom: 5px solid black;
+    color: #333333;
+}
+
+.navbar-default .navbar-nav > .activo > a, 
+.navbar-default .navbar-nav > .activo > a:hover, 
+.navbar-default .navbar-nav > .activo > a:focus {
+    border-bottom: 5px solid black;
+    color: #333333;
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+	background-color: black;
+    border-color: white;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: black;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+/* menu */
