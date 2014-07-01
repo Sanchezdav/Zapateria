@@ -86,6 +86,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_URL = '/media/'
+
 from os.path import join
 TEMPLATE_DIRS = (
     join(BASE_DIR,  'templates'),
@@ -94,6 +96,11 @@ TEMPLATE_DIRS = (
 STATICFILES_DIRS = (
     join(BASE_DIR, "static"),
 )
+
+MEDIA_ROOT = (
+    join(BASE_DIR, "media")
+)
+
 
 from django.core.urlresolvers import reverse_lazy
 

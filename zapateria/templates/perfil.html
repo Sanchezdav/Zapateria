@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Perfil{% endblock title %}
+
+{% block contenedor %}
+	<section>
+		<div class="container">
+			<div class="page-header">
+				<h1>Perfil</h1>
+			</div>
+			<h2>Bienvenido {{ perfil.usuario|capfirst }}</h2>
+			<h4><span class="label label-info">Usuario:</span></h4>{{ perfil.usuario }}
+			<h4><span class="label label-info">Nombre:</span></h4>{{ perfil.nombre }}
+			<h4><span class="label label-info">Apellido Paterno:</span></h4>{{ perfil.apellido_paterno }}
+			<h4><span class="label label-info">Apellido Materno:</span></h4>{{ perfil.apellido_materno }}
+			<h4><span class="label label-info">Edad:</span></h4>{{ perfil.edad }}
+			<h4><span class="label label-info">Estado:</span></h4>{{ perfil.estado }}
+			<h4><span class="label label-info">Municipio:</span></h4>{{ perfil.municipio }}
+			<h4><span class="label label-info">Colonia:</span></h4>{{ perfil.colonia }}
+			<h4><span class="label label-info">Calle:</span></h4>{{ perfil.calle }}
+			<h4><span class="label label-info">Numero:</span></h4>{{ perfil.numero }}
+			<h4><span class="label label-info">Codigo Postal:</span></h4>{{ perfil.codigo_postal }}
+			<h4><span class="label label-info">Telefono:</span></h4>{{ perfil.telefono }}
+			<figure>
+				<h4><span class="label label-info">Avatar:</span></h4>
+				<img class="img-circle" width='100' src="{{perfil.avatar.url}}" alt="avatar">
+			</figure>
+		</div>		
+	</section>
+{% endblock contenedor %}

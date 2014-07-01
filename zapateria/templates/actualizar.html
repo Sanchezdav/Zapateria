@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Actualizar{% endblock title %}
+
+{% block contenedor %}
+	<section>
+			<form class="formulario" method="POST" >
+				{% csrf_token %}
+				{{form.as_p}}
+				<input id="aceptar" class="registrar" type="submit" value="Aceptar" role="button"/>
+			</form>
+		</section>
+{% endblock contenedor %}
